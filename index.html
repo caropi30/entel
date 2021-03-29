@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Entel - Tienda de teléfonos</title>
+        <meta name="author" content="Carolina Pirela">
+        <meta name="copyright" content="Propietario de Carolina Pirela" />
+        <meta name="description" content="Tienda de telefonía">
+        <meta name="keywords" content="telefonía, teléfonos, telefonos, smartphone, equipos inteligentes, pantalla táctil">
+        <meta name="generator" content="prestashop">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!--Style / Animate CSS / Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script defer src="js/json.js"></script>
+        <script defer src="js/cart.js"></script>
+        <script defer src="js/logic.js"></script>
+        
+    </head>
+    <body>
+        <header class="shadow-sm">
+            <div class="logo">
+                <img src="assets/img/logo/puntos-logo.png" alt="">
+            </div>
+            <div class="menu-text">
+                <h3>Tienda de Equipos Liberados</h3>
+                <h6 class="text-right">by Entel</h6>
+            </div>
+            <div class="shopCart">
+                <button type="button" value="buy"  oneclick="getElementById();" class="btn align-self-center mt-2 pl-2 shopCart-btn" data-toggle="modal" data-target="#cartButtonModal">
+                    <a  href="pages/payment.html">
+                        <img src="assets/img/icons/shopping-cart.svg" alt="Shopping Cart">
+                    <p class="mt-2">0</p>
+                    </a>
+                </button>
+            </div>
+
+            <!--
+                 <button type="button" value="comprar" oneclick="getElementById();" class="btn btn-primary shopCart mx-5 d-flex">
+                    <img src="assets/img/icons/shopping-cart.svg" alt="Shopping Cart">
+                 </button>
+            -->
+        </header>
+        <main>
+           <!-- <aside class="filter">
+                <div class="brand-aside-menu__brands d-flex flex-column " role="group">
+                    <button type="button" class="btn btn btn-brand mb-2 py-3">Apple</button>
+                    <button type="button" class="btn btn btn-brand mb-2 py-3">Samsung</button>
+                    <button type="button" class="btn btn btn-brand mb-2 py-3">Nokia</button>
+                    <button type="button" class="btn btn btn-brand mb-2 py-3">Xiaomi</button>
+                    <button type="button" class="btn btn btn-brand mb-2 py-3">LG</button>
+                    <button type="button" class="btn btn btn-brand mb-2 py-3">Vivo</button>
+                </div>
+            </aside>
+
+           <div class="search">
+                <input class="search-bar" placeholder="Busca tu equipo" id="searchit">
+                <input type="submit" class="search-submit" id="search-submit">
+            </div>-->
+
+            <div id="catalogue" class="catalogue_grid">
+                
+           
+
+            <!--Equipment Features-->
+            <section id="featuresModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Características</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="item-img">
+                                <img src="../assets/img/apple/IPHONE_11.png">
+                            </div>
+                            <div class="item-body align-self-center">
+                                <ul class="features">
+                                    <li class="screen"></li>
+                                    <li class="frontCam"></li>
+                                    <li class="postCam"></li>
+                                    <li class="processor"></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-pink px-4" data-dismiss="modal" onclick="" value="Agregar">Agregar</butto
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+
+            <!--Shopping Cart
+            <section id="cartButtonModal" class="modal right fade modal-right" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">4 ITEMS</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="item-img">
+                                <img src="../assets/img/products/image-3.png">
+                            </div>
+                            <div class="item-body align-self-center">
+                                <p>Linterna Protac 2L-X recargable Streamlight.</p>
+                                <div class="yellow-button-group d-flex">
+                                    <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                                    <p class="flex-fill align-self-center pt-3">1</p>
+                                    <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price align-self-center">
+                                <h5>$15.000</h5> 
+                            </div>
+                        </div>
+                        <div class="modal-footer d-block">
+                            <div class="text">
+                                <p>TOTAL:<span> $15.000</span></p>  
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-blue">CONTACTAR VENTAS</button>
+                        </div>
+                    </div>
+                </div>
+            </section> -->  
+
+        </main>
+        <footer class="container-fluid home__Footer py-5">
+            <div class="row">
+                <p class="text-center col-12">&copy; Copyright 2020 - Entel</p>
+            </div>
+        </footer>
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    </body>
+</html>

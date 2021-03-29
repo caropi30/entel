@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background-color: #e9ecef;
+}
+
+
+/*Menu*/
+
+header {
+    background-color: blue;
+    display: flex;
+    align-content: baseline;
+    padding: 2rem 3rem 1rem 2rem;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 80px;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu-text{
+    color: #fff;
+}
+
+
+
+.shopCart {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.shopCart-btn {
+    padding-left: .5rem;
+}
+
+.shopCart-btn a {
+    display: flex;
+}
+
+.shopCart-btn img {
+    width: 40px;
+    padding-right: 5px;
+}
+
+.shopCart-btn p {
+    color: #fff;
+}
+
+.shopCart-btn input {
+    color: #fff;
+    border: none;
+}
+
+
+
+/*Catalogue*/
+
+main {
+    padding-top:3rem;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas:
+        ". catalogue catalogue ."
+        ". catalogue catalogue ."
+        ". catalogue catalogue .";
+
+}
+/*
+.filter {
+    grid-area: filter;
+    text-align: center;
+    margin: 1rem;
+    padding: 4rem 5rem;
+
+}
+
+.filter ul {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+.btn-brand {
+    background-color: #f75988;
+    /*border-radius: 50px;
+    color: #fff;
+}
+.search {
+    grid-area: search;
+}
+*/
+#catalogue {
+    grid-area: catalogue;
+}
+
+.catalogue_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-top: 2.5rem;
+    
+}
+
+#equipmentCard {
+    border: 1.5px solid #dcdcdd;
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: #f8f9fa;
+}
+
+
+
+#equipmentCard img {
+    width: 60%;
+}
+
+.btn-pink {
+    background-color: #f75988;
+    color: #fff;
+}
+
+/*Features Modal*/
