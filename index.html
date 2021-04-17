@@ -18,9 +18,11 @@
         <!--Style / Animate CSS / Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script defer src="js/json.js"></script>
         <script defer src="js/cart.js"></script>
         <script defer src="js/logic.js"></script>
+        <script defer src="js/animation.js"></script>
         
     </head>
     <body>
@@ -32,9 +34,9 @@
                 <h3>Tienda de Equipos Liberados</h3>
                 <h6 class="text-right">by Entel</h6>
             </div>
-            <div class="shopCart">
+            <div id="shopCart">
                 <button type="button" value="buy"  oneclick="getElementById();" class="btn align-self-center mt-2 pl-2 shopCart-btn" data-toggle="modal" data-target="#cartButtonModal">
-                    <a  href="pages/payment.html">
+                    <a>
                         <img src="assets/img/icons/shopping-cart.svg" alt="Shopping Cart">
                     <p class="mt-2">0</p>
                     </a>
@@ -72,12 +74,12 @@
             <section id="featuresModal" class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Características</h5>
+                        <div class="modal-header align-self-center">
+                            <h5 class="modal-title align-self-center">Características</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="item-img">
+                            <div class="modal-img align-self-center">
                                 <img src="../assets/img/apple/IPHONE_11.png">
                             </div>
                             <div class="item-body align-self-center">
@@ -91,11 +93,44 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-lg btn-pink px-4" data-dismiss="modal" onclick="" value="Agregar">Agregar</butto
+                            <button type="button" class="btn btn-lg btn-pink" data-dismiss="modal" onclick="" value="Agregar">Agregar</butto
                         </div>
                     </div>
                 </div>
             </section> 
+
+            <!--Cart-->
+            <section id="cartButtonModal" class="modal fade modal-right" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">4 ITEMS</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="item-img">
+                                <img src="../assets/img/apple/IPHONE_12.png">
+                            </div>
+                            <div class="item-body align-self-center">
+                                <p>iPhone 12</p>
+                                <div class="yellow-button-group d-flex">
+                                    <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                                    <p class="flex-fill align-self-center pt-3">1</p>
+                                    <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price align-self-center">
+                                <h5>$15.000</h5> 
+                            </div>
+                        </div>
+                        <div class="modal-footer d-block">
+                            <div class="text">
+                                <p>TOTAL:<span> $150.000</span></p>  
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-blue">CONTACTAR VENTAS</button>
+                        </div>
+                    </div>
+                </div>
+            </section>            
 
         </main>
         <footer class="container-fluid home__Footer py-5">
@@ -104,8 +139,6 @@
             </div>
         </footer>
         
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
 
