@@ -1,5 +1,4 @@
 //Card animation
-
 $(document).ready(function(){
     
     $('#equipmentCard').hover(
