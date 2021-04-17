@@ -7,6 +7,7 @@ class Equipment {
             for (let equipment of cart) {
                 total += parseFloat(equipment.price)
             }
+        
 
             return total
         }
